@@ -1,9 +1,9 @@
 import { FC } from 'react'
 
-const ZoomWindow: FC = () => {
+const ZoomWindow: FC<{ url: string }> = ({ url }) => {
     return (
         <div>
-            <iframe src='' frameBorder='0'></iframe>
+            <iframe src={url} frameBorder='0'></iframe>
         </div>
     )
 }
